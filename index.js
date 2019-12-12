@@ -1,1 +1,1 @@
-module.exports = require('./lib/dpp')
+module.exports = require('./lib')
