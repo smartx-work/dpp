@@ -75,7 +75,9 @@ module.exports = function ({ dpp, http200, http000, http999 }, { tests, test, as
                     },
                 },
                 response (resp, config) {
-                    assert.isEqual(resp, mock)
+                    assert.isObject(resp)
+                    assert.isEqual(resp.data, mock.data)
+                    assert.isEqual(resp.headers, mock.headers)
                 },
             }))
 

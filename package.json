@@ -1,6 +1,6 @@
 {
   "name": "@smartx/dpp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/smartx-work/dpp.git",
   "author": "sschen86 <sschen86@163.com>",
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@smartx/eslint-config-tentative": "^1.2.1",
-    "ijest": "^1.0.1"
+    "ijest": "^1.0.2"
   },
   "dependencies": {
     "@smartx/adapter": "^1.0.2",

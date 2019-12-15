@@ -46,6 +46,7 @@ module.exports = function ({ dpp, http200, http999 }, { tests, test, assert }) {
                 response (resp, config) {
                     assert.isObject(resp)
                     assert.isObject(resp.config)
+                    assert.isObject(resp.headers)
                     assert.isObject(config)
                     assert.isString(config.method)
 
@@ -56,7 +57,16 @@ module.exports = function ({ dpp, http200, http999 }, { tests, test, assert }) {
                 },
             }))
 
-            return pp.apis.test()
+            return Promise.all([
+                pp.apis.test(),
+                pp.apis.test(null, {
+                    mock () {
+                        return {
+                            data: {},
+                        }
+                    },
+                }),
+            ])
         })
 
         test('handles.success(data, config)', () => {

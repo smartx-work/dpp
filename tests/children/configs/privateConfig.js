@@ -57,7 +57,7 @@ module.exports = function ({ dpp, http200, http999 }, { tests, test, assert }) {
                     },
                 },
                 response (resp) {
-                    assert.isEqual(resp, privateMock)
+                    assert.isEqual(resp, { data: privateMock.data, headers: {}, config: {} })
                 },
             }))
 
