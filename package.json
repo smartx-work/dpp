@@ -1,6 +1,6 @@
 {
   "name": "@smartx/dpp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "https://github.com/smartx-work/dpp.git",
   "author": "sschen86 <sschen86@163.com>",
